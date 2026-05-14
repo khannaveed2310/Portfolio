@@ -87,7 +87,7 @@ export function HeroSection() {
               asChild
             >
               <a
-                href="/MohdNaveedKhan.pdf"
+                href="/MohdNaveedKhan_.pdf"
                 download
               >
                 Download CV
