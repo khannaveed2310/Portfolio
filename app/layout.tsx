@@ -6,16 +6,16 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Naveed - Software Engineer | Full-Stack Developer',
+  title: 'Mohd Naveed Khan - Software Engineer | Full-Stack Developer',
   description: 'Experienced Software Engineer specializing in Next.js, Django, and AWS. Building scalable web applications and real-time solutions.',
   keywords: ['Software Engineer', 'Full-Stack Developer', 'Next.js', 'Django', 'AWS', 'React', 'WebSockets'],
-  authors: [{ name: 'Naveed' }],
-  creator: 'Naveed',
+  authors: [{ name: 'Mohd Naveed Khan' }],
+  creator: 'Mohd Naveed Khan',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://naveed.dev',
-    title: 'Naveed - Software Engineer',
+    title: 'Mohd Naveed Khan - Software Engineer',
     description: 'Building full-stack web apps with Next.js, Django & AWS',
   },
 };

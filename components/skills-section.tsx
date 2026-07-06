@@ -8,16 +8,19 @@ export function SkillsSection() {
     { name: "Python", icon: "/python.png" },
     { name: "Django", icon: "/django.png" },
     { name: "Next.js", icon: "/next.png" },
+    { name: "React", icon: "/React.png" },
+    { name: "TypeScript", icon: "/ts.png" },
     { name: "JavaScript", icon: "/javascript.png" },
-    { name: "Tailwind", icon: "/tailwindcss.png" },
+    { name: "Tailwind CSS", icon: "/tailwindcss.png" },
     { name: "AWS", icon: "/aws.png" },
     { name: "Docker", icon: "/docker.png" },
-    
+    { name: "Nginx", icon: "/Nginx.png" },
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="py-24 bg-white dark:bg-slate-900">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -25,48 +28,44 @@ export function SkillsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-6">
-            Skills
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
+            Tech Stack
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-            We put your ideas and thus your wishes in the form of unique
-            projects that inspire you and your audience.
+          <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full" />
+          <p className="text-slate-600 dark:text-slate-400 mt-6 max-w-2xl mx-auto">
+            Technologies I work with to build modern, scalable applications
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-3 md:grid-cols-7  gap-8 md:gap-12">
-          {skills.map((skill, index) => {
-            // Smaller size for Next.js, Django, AWS
-            const isSmaller = ["Next.js", "Django",].includes(skill.name);
-            const iconSize = isSmaller ? "h-7 w-auto" : "h-12 w-auto";
-
-            return (
-              <motion.div
-                key={skill.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="flex flex-col items-center"
-              >
-                {/* Dark Circle with Logo */}
-                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gray-800 flex items-center justify-center mb-3">
+        {/* Skills Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+          {skills.map((skill, index) => (
+            <motion.div
+              key={skill.name}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -8, scale: 1.02 }}
+              className="group relative"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="relative bg-white dark:bg-slate-800/50 rounded-2xl p-6 text-center border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all duration-300">
+                <div className="w-16 h-16 mx-auto mb-3 flex items-center justify-center">
                   <Image
                     src={skill.icon}
                     alt={skill.name}
-                    width={50}
-                    height={50}
-                    className={`${iconSize} object-contain`}
+                    width={48}
+                    height={48}
+                    className="w-12 h-12 object-contain"
                   />
                 </div>
-
-                {/* Name */}
-                <h3 className="text-purple-600 dark:text-purple-400 text-lg md:text-xl font-semibold text-center">
+                <span className="text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {skill.name}
-                </h3>
-              </motion.div>
-            );
-          })}
+                </span>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
