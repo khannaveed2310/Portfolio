@@ -8,10 +8,12 @@ import { ProjectsSection } from '@/components/projects-section';
 import { ExperienceSection } from '@/components/experience-section';
 import { ContactSection } from '@/components/contact-section';
 import { Footer } from '@/components/footer';
+import { ParticleCanvas } from '@/components/particle-canvas';
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative min-h-screen bg-[#030712] text-slate-100 overflow-hidden selection:bg-cyan-500/30 selection:text-cyan-200">
+      <ParticleCanvas />
       <Navbar />
       <HeroSection />
       <AboutSection />
