@@ -87,10 +87,10 @@ export function Navbar() {
         initial={{ y: -60, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-3 left-0 right-0 z-50 transition-all duration-300 px-4 sm:px-6 lg:px-8`}
+        className={`fixed top-3 left-0 right-0 z-50 transition-all duration-300 px-4 sm:px-6 lg:px-6`}
       >
         <div
-          className={`max-w-6xl mx-auto rounded-2xl border transition-all duration-300 ${
+          className={`max-w-7xl mx-auto rounded-2xl border transition-all duration-300 ${
             scrolled
               ? "bg-[#050b18]/80 backdrop-blur-xl border-cyan-500/20 shadow-[0_8px_32px_rgba(0,0,0,0.5),0_0_20px_rgba(6,182,212,0.1)] py-2.5 px-4 sm:px-6"
               : "bg-[#070e22]/50 backdrop-blur-md border-white/10 py-3.5 px-4 sm:px-6"
@@ -179,7 +179,7 @@ export function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="md:hidden max-w-6xl mx-auto mt-2 rounded-2xl bg-[#070e22]/95 border border-cyan-500/30 p-4 shadow-2xl backdrop-blur-2xl"
+              className="md:hidden max-w-7xl mx-auto mt-2 rounded-2xl bg-[#070e22]/95 border border-cyan-500/30 p-4 shadow-2xl backdrop-blur-2xl"
             >
               <div className="flex flex-col gap-1.5">
                 {navItems.map((item) => (

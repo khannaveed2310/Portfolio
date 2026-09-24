@@ -12,7 +12,7 @@ export function Footer() {
 
   return (
     <footer className="relative py-12 bg-[#02050c] border-t border-slate-900 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           
           {/* Identity & Status */}

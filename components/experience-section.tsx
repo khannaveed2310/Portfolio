@@ -66,7 +66,7 @@ export function ExperienceSection() {
       {/* Background Ambience */}
       <div className="absolute top-1/2 left-1/3 w-[35rem] h-[35rem] bg-cyan-500/5 rounded-full blur-[160px] pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 relative z-10">
         
         {/* Section Header */}
         <motion.div

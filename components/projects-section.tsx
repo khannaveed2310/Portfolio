@@ -109,7 +109,7 @@ export function ProjectsSection() {
       {/* Background Neon Halo */}
       <div className="absolute top-1/3 right-1/4 w-[35rem] h-[35rem] bg-purple-500/5 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 relative z-10">
         
         {/* Section Header */}
         <motion.div

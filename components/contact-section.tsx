@@ -32,7 +32,7 @@ export function ContactSection() {
       {/* Background Ambience */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[45rem] h-[25rem] bg-cyan-500/10 rounded-full blur-[150px] pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 relative z-10">
         
         {/* Section Header */}
         <motion.div
