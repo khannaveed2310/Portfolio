@@ -100,6 +100,7 @@ export function InteractiveTerminal() {
             <p className="text-slate-300 font-mono">2. <span className="text-amber-300">RealTime Chat</span> - Scalable WebSockets with Socket.IO</p>
             <p className="text-slate-300 font-mono">3. <span className="text-amber-300">DevFinder</span> - Developer analytics hub with GitHub API</p>
             <p className="text-slate-300 font-mono">4. <span className="text-amber-300">BookShelfPro</span> - Modern SaaS library manager</p>
+            <p className="text-slate-300 font-mono">5. <span className="text-amber-300">RailBook</span> - Rail travel booking platform (Next.js + TS) <a href="https://rail-book-six.vercel.app/" target="_blank" className="text-cyan-300 underline ml-1">↗ live</a></p>
           </div>
         );
         break;

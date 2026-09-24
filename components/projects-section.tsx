@@ -92,6 +92,19 @@ export function ProjectsSection() {
       stats: { stars: 10, forks: 5 },
       gradient: "from-pink-500 to-rose-600",
     },
+    {
+      title: "RailBook",
+      category: "frontend",
+      categoryLabel: "Rail Travel Booking Platform",
+      description:
+        "Full-featured train travel application with route search, live schedule browsing, interactive seat selection, passenger detail collection, booking flow, and trip history dashboard — all persisted without a backend.",
+      architecture: "Next.js SSR + TypeScript + LocalStorage & SessionStorage Persist Engine",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "LocalStorage", "SessionStorage"],
+      github: "https://github.com/khannaveed2310/RailBook",
+      live: "https://rail-book-six.vercel.app/",
+      stats: { stars: 9, forks: 3 },
+      gradient: "from-blue-500 to-violet-600",
+    },
   ];
 
   const filterTabs = [
