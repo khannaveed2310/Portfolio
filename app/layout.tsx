@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   keywords: ['Mohd Naveed Khan', 'Full-Stack Developer', 'Software Engineer', 'Next.js', 'Django', 'AWS', 'Docker', 'TypeScript', 'WebSockets'],
   authors: [{ name: 'Mohd Naveed Khan' }],
   creator: 'Mohd Naveed Khan',
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+    shortcut: '/logo.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -16,11 +21,13 @@ export const metadata: Metadata = {
     title: 'Mohd Naveed Khan | Full-Stack Architect & Software Engineer',
     description: 'Crafting high-performance web systems with Next.js, Django, and modern cloud infrastructure.',
     siteName: 'Mohd Naveed Khan Portfolio',
+    images: [{ url: '/logo.png', width: 1024, height: 1024, alt: 'Naveed Logo' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Mohd Naveed Khan | Full-Stack Engineer',
     description: 'High-performance web apps with Next.js, Django & AWS',
+    images: ['/logo.png'],
   },
 };
 
@@ -32,6 +39,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

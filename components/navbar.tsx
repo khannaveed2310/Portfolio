@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Terminal, FileDown, Radio, Sparkles } from "lucide-react";
+import { Menu, X, FileDown, Radio, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -102,8 +102,9 @@ export function Navbar() {
               onClick={() => scrollToSection("#home")}
               className="flex items-center gap-2.5 cursor-pointer group select-none"
             >
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-500/20 to-purple-600/20 border border-cyan-500/30 flex items-center justify-center group-hover:border-cyan-400/70 group-hover:shadow-[0_0_15px_rgba(6,182,212,0.5)] transition-all duration-300">
-                <Terminal className="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform" />
+              <div className="w-9 h-9 rounded-xl overflow-hidden flex items-center justify-center group-hover:shadow-[0_0_15px_rgba(6,182,212,0.5)] transition-all duration-300 shrink-0">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/logo.png" alt="Naveed Logo" className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col">
                 <span className="font-mono font-bold text-sm tracking-tight text-white flex items-center gap-1">
